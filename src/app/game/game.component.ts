@@ -11,9 +11,12 @@ import {RouterLink} from '@angular/router';
   styleUrl: './game.component.css'
 })
 export class GameComponent {
-  zaehler:number = 0;
+  zaehler:number = localStorage.getItem('zaehler') === null ? 0 : Number(localStorage.getItem('zaehler'));
 
   keksPress(){
     this.zaehler++;
+    localStorage.setItem('zaehler', String(this.zaehler));
   }
+
+
 }
