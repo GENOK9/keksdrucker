@@ -1,11 +1,10 @@
 <div>
-    <mat-card class="KeksZaehlerBox">
-        <mat-card-title class="zaehler">{{zaehler}}</mat-card-title>
-        <mat-card-content class="ClickerBox">
-            <button mat-raised-button="primary" (click)="keksPress()"
-                style="display: flex; align-items: center; gap: 8px;" class="Clicker">
-                <img src="Keks.png" alt="Du uhdaw" width="20" height="20" />
-            </button>
-        </mat-card-content>
-    </mat-card>
+  <mat-card class="KeksZaehlerBox">
+    <mat-card-title class="zaehler">{{ zaehler }}</mat-card-title>
+    <mat-card-content class="ClickerBox">
+      <button (click)="keksPress()" class="Clicker" mat-icon-button>
+        <img src="Keks.png" alt="Keks" class="KeksBild" />
+      </button>
+    </mat-card-content>
+  </mat-card>
 </div>
