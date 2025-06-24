@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule} from "@angular/material/button";
+import {MatCardModule} from "@angular/material/card"
 @Component({
   selector: 'app-game',
-  imports: [],
+  imports: [MatIconModule, MatButtonModule, MatCardModule],
   templateUrl: './game.component.html',
   styleUrl: './game.component.css'
 })
 export class GameComponent {
+  zaehler:number = 0;
 
+  keksPress(){
+    this.zaehler++;
+  }
 }
