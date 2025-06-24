@@ -1,0 +1,20 @@
+.Clicker{
+    width: 100px;
+    height: 30px;
+}
+
+.zaehler{
+    color: white;
+}
+
+.ClickerBox{
+    width: 100px;
+    height: 200px;
+}
+
+.KeksZaehlerBox{
+    width: 200px;
+    margin-left: 650px;
+    margin-top: 200px;
+}
+
