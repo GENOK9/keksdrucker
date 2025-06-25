@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: violet;
 }
 .title{
   flex-grow: 1;
@@ -11,10 +10,10 @@
 }
 
 .content{
-background-color: green;
+
 }
 .upgrades{
-background-color: yellow;
+
 }
 
 /* Material Karte in der Der Keks und der Zähler sind*/
