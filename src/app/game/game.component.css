@@ -1,50 +1,119 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: violet;
+}
+.title{
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.content{
+background-color: green;
+}
+.upgrades{
+background-color: yellow;
+}
+
+/* Material Karte in der Der Keks und der Zähler sind*/
 .KeksZaehlerBox {
-    background-color: bisque;
-    width: 220px;
-    margin: 200px auto;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: bisque;
+  width: 300px;
+  height: 280px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 500px;
+  margin-bottom: 200px;
 }
-
+/* Der Zähler der die Kliks auf den Cookie Zählt*/
 .zaehler {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
-
+/* Legt die Position des Cookies auf der Material Card fest*/
 .ClickerBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+/* Der Button unter dem Image*/
 .Clicker {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    overflow: hidden; /* wichtig, damit runde Form das Bild beschneidet */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.1s;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden; /* wichtig, damit runde Form das Bild beschneidet */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s;
 }
-
+/*Hover Efekt für den Button*/
 .Clicker:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+/*Image das über/in dem Button liegt*/
+.KeksBild {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* füllt den runden Button gut aus */
+  pointer-events: none;
+  user-select: none;
+  border-radius: 50%;
 }
 
-.KeksBild {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* füllt den runden Button gut aus */
-    pointer-events: none;
-    user-select: none;
-    border-radius: 50%;
+/*Dark Mode*/
+.settingsButtonDark {
+  background-color: bisque !important;
+  color: #1e1e1e !important;
+  padding: 8px;
+  margin-left: 8px;
 }
+
+.titleDarkMode{
+  color: bisque !important;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/*Light Mode*/
+.settingsButtonLight{
+  background-color: darkslategray !important;
+  color: beige !important;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.titleLightMode{
+  color: darkslategray !important;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+
+
+
+.cookieRow{
+  background-color: green;
+  max-width: 1000px;
+  padding: 0 16px;
+}
+
+.gameRow{
+
+}
+
+.upgradeRow{
+  background-color: yellow;
+}
+
