@@ -12,7 +12,7 @@ export class GameService {
   }
 
   getSettingButtonMode():string{
-    return this.isDarkMode ? 'settingsButtonDarkMode' : 'settingsButtonLightMode';
+    return this.isDarkMode ? 'settingsButtonDark' : 'settingsButtonLight';
   }
 
   getTitleTheme():string{
