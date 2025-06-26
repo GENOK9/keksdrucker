@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card"
 import {RouterLink} from '@angular/router';
 import {MatGridList, MatGridTile} from '@angular/material/grid-list';
 import {UpgradesComponent} from '../upgrades/upgrades.component';
+import {GameService} from '../game.service';
+import {UpgradesService} from '../upgrades.service';
 
 @Component({
   selector: 'app-game',
@@ -12,21 +14,35 @@ import {UpgradesComponent} from '../upgrades/upgrades.component';
   templateUrl: './game.component.html',
   styleUrl: './game.component.css'
 })
-export class GameComponent {
-  cookies:number = localStorage.getItem('cookies') === null ? 0 : Number(localStorage.getItem('cookies'));
+export class GameComponent implements OnInit{
 
-  keksPress(){
-    this.cookies++;
-    localStorage.setItem('cookies', String(this.cookies));
+  cookies:number = 0;
+  CPS:number = 0;
+  AC:number = 0;
+
+  constructor(private gameService: GameService, private upgradesService: UpgradesService) {}
+
+  ngOnInit() {
+    this.upgradesService.cookies$.subscribe((value:number)=> {
+      this.cookies = value;
+    });
+    this.upgradesService.CPS$.subscribe((value:number)=> {
+      this.CPS = value;
+    });
+    this.upgradesService.AC$.subscribe((value:number)=> {
+      this.AC = value;
+    });
+  }
+
+  cookiePress(){
+    this.upgradesService.cookiePress();
   }
   setSettingButtonMode():string{
-    const darkMode = localStorage.getItem('darkMode');
-    return darkMode === 'true' ? 'settingsButtonDark' : 'settingsButtonLight';
+    return this.gameService.getSettingButtonMode();
   }
 
   setTitleTheme():string{
-    const darkMode = localStorage.getItem('darkMode');
-    return darkMode === 'true' ? 'titleDarkMode' : 'titleLightMode';
+    return this.gameService.getTitleTheme();
   }
 
 }

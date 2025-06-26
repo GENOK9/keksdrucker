@@ -9,12 +9,22 @@
     </mat-grid-tile>
   <mat-grid-tile colspan="3" class="content" rowspan="6">
     <mat-card class="KeksZaehlerBox">
-    <mat-card-title class="zaehler">{{ cookies }}</mat-card-title>
+    <mat-card-title class="zaehler">{{ cookies }} Cookies</mat-card-title>
     <mat-card-content class="ClickerBox">
-      <button (click)="keksPress()" class="Clicker" mat-icon-button>
+      <button (click)="cookiePress()" class="Clicker" mat-icon-button>
         <img src="Keks.png" alt="Keks" class="KeksBild" />
       </button>
     </mat-card-content>
+      <mat-card-footer class="ziel">
+        <h1>
+        {{CPS}} Stärke
+        </h1>
+      </mat-card-footer>
+      <mat-card-footer class="ziel">
+        <h1>
+        {{AC}} Auto Clicker
+        </h1>
+      </mat-card-footer>
     </mat-card>
   </mat-grid-tile>
   <mat-grid-tile colspan="1" class="upgrades" rowspan="6">
