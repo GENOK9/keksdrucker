@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import {GameComponent} from './game/game.component';
 import {EinstellungenComponent} from './einstellungen/einstellungen.component';
+import {ImpressumComponent} from './impressum/impressum.component';
 
 export const routes: Routes = [
   {path:"",
@@ -13,6 +14,10 @@ export const routes: Routes = [
   {
     path:"settings",
     component:EinstellungenComponent
+  },
+  {
+    path:"impressum",
+    component:ImpressumComponent
   }
 
 ];
