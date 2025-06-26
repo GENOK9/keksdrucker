@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body.dark-mode {
+  background-color: #0b101c;
+  color: #ffffff;
+}
+
+/* Optional für Angular Material Theme Overrides */
+body.dark-mode .mat-card {
+  background-color: #1e1e1e;
+}
+
