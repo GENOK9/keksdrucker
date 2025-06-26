@@ -1,0 +1,43 @@
+.upgradeBoxDarkMode{
+  background-color: bisque !important;
+  color: #1e1e1e !important;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 230px;
+  height: 150px;
+  text-align: center;
+}
+
+.upgradeBoxLightMode{
+  background-color: darkslategrey !important;
+  color: beige !important;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 230px;
+  height: 150px;
+  text-align: center;
+  max-height: 150px;
+}
+.upgradeButonLightMode{
+  background-color: bisque !important;
+  padding: 8px;
+  color: #1e1e1e !important;
+  margin-top: 10px;
+}
+
+.upgradeButtonDarkMode{
+  background-color: darkslategrey !important;
+  padding: 8px;
+  color: beige !important;
+  margin-top: 10px;
+}
+
+.AutoClickerUpgrade{
+  margin-top: 20px;
+}
+
+.Upgrades{
+  align-items: center;
+}

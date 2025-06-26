@@ -1,0 +1,43 @@
+.backToGameButtonDarkMode{
+  background-color: bisque !important;
+  color: #1e1e1e !important;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.backToGameButtonLightMode{
+  background-color: darkslategray !important;
+  color: beige !important;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.titleLightMode{
+  color: darkslategray !important;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.titleDarkMode{
+  color: bisque !important;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title{
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.darkMode{
+}
+
+.resetButton{
+}

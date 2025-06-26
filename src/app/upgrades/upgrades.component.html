@@ -1,0 +1,32 @@
+<div class="Upgrades">
+  <div>
+    <mat-card [class]="setUpgradeBoxMode()">
+      <mat-card-title>Extra Finger</mat-card-title>
+      <mat-card-content>
+        <button mat-raised-button [class]="setUpgradeButtonMode()" (click)="buyCPS()">
+          <mat-icon>{{setBuyButtonCPSIcon()}}</mat-icon>
+        </button>
+      </mat-card-content>
+      <mat-card-footer>
+        <h3>
+        Preis: {{setCPSPreis()}}
+        </h3>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+  <div class="AutoClickerUpgrade">
+    <mat-card [class]="setUpgradeBoxMode()">
+      <mat-card-title>Auto Clicker</mat-card-title>
+      <mat-card-content>
+        <button mat-raised-button [class]="setUpgradeButtonMode()" (click)="buyAC()">
+          <mat-icon>{{setBuyButtonACIcon()}}</mat-icon>
+        </button>
+      </mat-card-content>
+      <mat-card-footer>
+        <h3>
+        Preis: {{setACPreis()}}
+        </h3>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>

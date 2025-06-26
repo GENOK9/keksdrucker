@@ -1,0 +1,34 @@
+.settingsBoxLightMode{
+  background-color: darkslategrey;
+  color: beige;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 230px;
+  text-align: center;
+}
+
+.settingsBoxDarkMode{
+  background-color: bisque;
+  color: #1e1e1e;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 230px;
+  text-align: center;
+  max-height: 100px;
+}
+
+.resetButtonLightMode{
+  background-color: bisque !important;
+  padding: 8px;
+  color: #1e1e1e !important;
+  margin-top: 10px;
+}
+
+.resetButtonDarkMode{
+  background-color: darkslategrey !important;
+  padding: 8px;
+  color: beige !important;
+  margin-top: 10px;
+}

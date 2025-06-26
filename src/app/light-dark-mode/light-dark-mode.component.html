@@ -1,0 +1,6 @@
+<mat-card [class]="setBoxMode()">
+  <mat-card-title>DarkMode</mat-card-title>
+  <mat-card-content class="SliderPosition">
+    <mat-slide-toggle [checked]="isDarkMode" (change)="toggleDarkMode($event)" class="Slider" ></mat-slide-toggle>
+  </mat-card-content>
+</mat-card>
