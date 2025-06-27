@@ -7,6 +7,7 @@ import {MatGridList, MatGridTile} from '@angular/material/grid-list';
 import {UpgradesComponent} from '../upgrades/upgrades.component';
 import {GameService} from '../game.service';
 import {UpgradesService} from '../upgrades.service';
+import {ShopService} from '../shop.service';
 
 @Component({
   selector: 'app-game',
@@ -19,8 +20,12 @@ export class GameComponent implements OnInit{
   cookies:number = 0;
   CPS:number = 0;
   AC:number = 0;
+  IMG:string = ""
 
-  constructor(private gameService: GameService, private upgradesService: UpgradesService) {}
+  constructor(private gameService: GameService,
+              private upgradesService: UpgradesService,
+              private shopService: ShopService
+  ) {}
 
   ngOnInit() {
     this.upgradesService.cookies$.subscribe((value:number)=> {
@@ -44,5 +49,11 @@ export class GameComponent implements OnInit{
   setTitleTheme():string{
     return this.gameService.getTitleTheme();
   }
+
+  setCookieImg():string{
+    return this.shopService.activeCookieImage;
+  }
+
+
 
 }

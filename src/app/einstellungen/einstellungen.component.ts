@@ -25,4 +25,8 @@ export class EinstellungenComponent {
   setTitleTheme():string{
     return this.einstellungenService.getTitleTheme();
   }
+
+  refresh(){
+    this.einstellungenService.refresh();
+  }
 }

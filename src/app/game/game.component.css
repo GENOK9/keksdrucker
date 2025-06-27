@@ -16,6 +16,12 @@
 
 }
 
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Material Karte in der Der Keks und der Zähler sind*/
 .KeksZaehlerBox {
   background-color: bisque;

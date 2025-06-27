@@ -1,0 +1,76 @@
+<mat-grid-list cols="2" rowHeight="100px">
+  <mat-grid-tile colspan="2" class="header">
+    <button mat-raised-button color="accent" routerLink="/game" [class]="setShopButtonMode()">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <h1 class="title" [class]="setTitleTheme()">
+      SHOP
+    </h1>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="3" class="first">
+    <mat-card [class]="setShopBoxMode()">
+      <mat-card-title>
+        <h2> REAL COOKIE </h2>
+      </mat-card-title>
+      <mat-card-content>
+      <img src="realCookie.png" alt="realCookie" class="realCookieImage"/>
+      </mat-card-content>
+      <mat-card-footer>
+        <button mat-raised-button color="accent" (click)="buyRealCookie()" [class]="BuyButtonMode()">
+          {{setRealCookiePrice()}}
+        </button>
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="3" class="second">
+    <mat-card [class]="setShopBoxMode()">
+      <mat-card-title>
+        <h2> HAFER COOKIE </h2>
+      </mat-card-title>
+      <mat-card-content>
+        <img src="haferCookie.png" alt="haferCookie" class="haferCookieImage"/>
+      </mat-card-content>
+      <mat-card-footer>
+        <button mat-raised-button color="accent" (click)="buyHaferCookie()" [class]="BuyButtonMode()">
+          {{setHaferCookiePrice()}}
+        </button>
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="2"></mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="3" class="third">
+    <mat-card [class]="setShopBoxMode()">
+      <mat-card-title>
+        <h2> LEIBNIZ COOKIE </h2>
+      </mat-card-title>
+      <mat-card-content>
+        <img src="leibnizCookie.png" alt="leibnizCookie" class="leibnizCookieImage"/>
+      </mat-card-content>
+      <mat-card-footer>
+        <button mat-raised-button color="accent" (click)="buyLeibnizCookie()" [class]="BuyButtonMode()">
+          {{setLeibnizCookiePrice()}}
+        </button>
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="1" rowspan="3" class="fourth">
+    <mat-card [class]="setShopBoxMode()">
+      <mat-card-title>
+        <h2> PAINTED COOKIE </h2>
+      </mat-card-title>
+      <mat-card-content>
+        <img src="paintedCookie.png" alt="paintedCookie" class="leibnizCookieImage"/>
+      </mat-card-content>
+      <mat-card-footer>
+        <button mat-raised-button color="accent" (click)="buyPaintedCookie()" [class]="BuyButtonMode()">
+          {{setPaintedCookiePrice()}}
+        </button>
+      </mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

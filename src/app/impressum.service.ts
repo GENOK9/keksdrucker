@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class GameService {
+export class ImpressumService {
 
   constructor() { }
 
@@ -11,11 +11,15 @@ export class GameService {
     return localStorage.getItem('darkMode') === 'true';
   }
 
-  getSettingButtonMode():string{
-    return this.isDarkMode ? 'settingsButtonDark' : 'settingsButtonLight';
+  getGameButtonMode():string{
+    return this.isDarkMode ? 'backToGameButtonDarkMode' : 'backToGameButtonLightMode';
   }
 
   getTitleTheme():string{
     return this.isDarkMode ? 'titleDarkMode' : 'titleLightMode';
   }
+  getCardTheme():string{
+    return this.isDarkMode ? 'cardDarkMode' : 'cardLightMode'
+  }
+
 }

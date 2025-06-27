@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {MatCard, MatCardContent, MatCardFooter, MatCardTitle} from '@angular/material/card';
 import {MatIcon} from '@angular/material/icon';
 import {UpgradesService} from '../upgrades.service';
+import {RouterLink} from "@angular/router";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-upgrades',
@@ -10,7 +12,9 @@ import {UpgradesService} from '../upgrades.service';
     MatCardTitle,
     MatCardContent,
     MatIcon,
-    MatCardFooter
+    MatCardFooter,
+    RouterLink,
+    MatButton
   ],
   templateUrl: './upgrades.component.html',
   styleUrl: './upgrades.component.css'
