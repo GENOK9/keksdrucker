@@ -29,4 +29,14 @@
       </mat-card-footer>
     </mat-card>
   </div>
+  <div class="Shop">
+    <mat-card [class]="setUpgradeBoxMode()">
+      <mat-card-title>SHOP</mat-card-title>
+      <mat-card-content>
+        <button mat-raised-button [class]="setUpgradeButtonMode()" routerLink="/shop">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>

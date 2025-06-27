@@ -12,7 +12,7 @@
     <mat-card-title class="zaehler">{{ cookies }} Cookies</mat-card-title>
     <mat-card-content class="ClickerBox">
       <button (click)="cookiePress()" class="Clicker" mat-icon-button>
-        <img src="Keks.png" alt="Keks" class="KeksBild" />
+        <img [src]="setCookieImg()" [alt]="setCookieImg()" class="KeksBild" />
       </button>
     </mat-card-content>
       <mat-card-footer class="ziel">
@@ -28,7 +28,7 @@
     </mat-card>
   </mat-grid-tile>
   <mat-grid-tile colspan="1" class="upgrades" rowspan="6">
-    <app-upgrades></app-upgrades>
+      <app-upgrades></app-upgrades>
   </mat-grid-tile>
   <mat-grid-tile colspan="4" class="footer">
     <button routerLink="/impressum"> impressum </button>

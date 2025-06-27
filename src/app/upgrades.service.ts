@@ -1,5 +1,6 @@
-import { Injectable } from '@angular/core';
+import {inject, Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
+import {ShopService} from "./shop.service";
 @Injectable({
   providedIn: 'root'
 })
@@ -136,5 +137,10 @@ export class UpgradesService {
     this.priceCPS = 20;
     this.AC = 0;
     this.priceAC = 100;
+    localStorage.setItem("activeImage", "realCookie.png")
+    localStorage.setItem("realCookiePrice", String("0"));
+    localStorage.setItem("haferCookiePrice", String("15000"));
+    localStorage.setItem("leibnizCookiePrice", String("250000"));
+    localStorage.setItem("paintedCookiePrice", String("50000000"));
   }
 }

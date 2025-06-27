@@ -1,6 +1,6 @@
 <mat-grid-list cols="4" rowHeight="100px">
   <mat-grid-tile colspan="4" class="header">
-    <button mat-raised-button [class]="setGameButtonMode()" routerLink="/game">
+    <button mat-raised-button [class]="setGameButtonMode()" routerLink="/game" (click)="refresh()">
       <mat-icon>arrow_back</mat-icon>
     </button>
     <h1 class ="title" [class]="setTitleTheme()">

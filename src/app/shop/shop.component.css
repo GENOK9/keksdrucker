@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title{
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  margin-right: 70px;
+}
+
+.shopButtonLight{
+  background-color: darkslategray !important;
+  color: beige !important;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.shopButtonDark {
+  background-color: bisque !important;
+  color: #1e1e1e !important;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.titleDarkMode{
+  color: bisque !important;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.titleLightMode{
+  color: darkslategray !important;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.realCookieImage{
+  height: 100px;
+  width: 100px;
+}
+
+.haferCookieImage{
+  height: 100px;
+  width: 140px;
+}
+
+.leibnizCookieImage{
+  height: 100px;
+  width: 100px;
+}
+.shopBoxDarkMode{
+  background-color: bisque !important;
+  color: #1e1e1e !important;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.shopBoxLightMode{
+  background-color: darkslategrey !important;
+  color: beige !important;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.BuyButtonLightMode{
+  background-color: bisque !important;
+  padding: 8px;
+  color: #1e1e1e !important;
+  margin-top: 10px;
+}
+
+.BuyButtonDarkMode{
+  background-color: darkslategrey !important;
+  padding: 8px;
+  color: beige !important;
+  margin-top: 10px;
+}
+
+
